@@ -1,11 +1,12 @@
 import React from 'react'
 
-const Header = () => {
+const Header = props => {
   return (
     <div className="top">
-            <h1>
-                    Car Secure
-           </h1>
+      <header className="top">
+
+        <h1>Cotizador de Seguro de Auto</h1>
+      </header>
     </div>
   )
 }
