@@ -5,7 +5,7 @@ const Header = props => {
     <div className="top">
       <header className="top">
 
-        <h1>Cotizador de Seguro de Auto</h1>
+        <h1>{props.title}</h1>
       </header>
     </div>
   )
