@@ -13,10 +13,6 @@ class App extends Component {
     datos: {}
   }
   cotizarSeguro = (datos) => {
-
-
-
-
     const { marca, plan, year } = datos;
 
     //La base de cada seguro es 2000
@@ -27,16 +23,14 @@ class App extends Component {
 
     //Por cada year restar el 3%
     resultado -= ((diferencia * 3) * resultado) / 100;
+
     //Americano 15% Asiatico 5% Europeo 30% incremento al valor
     resultado = calcularPorMarca(marca) * resultado;
 
-
     // plan basico incrementa 20% al valor y completo el 50% al valor
-
     resultado = parseFloat(obtenerPlan(plan) * resultado).toFixed(2);
 
     //creo objeto para el resumen
-
     const datosAuto = {
       marca: marca,
       plan: plan,

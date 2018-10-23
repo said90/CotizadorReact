@@ -23,8 +23,8 @@ export function calcularPorMarca(modelo) {
     return incremento;
 }
 
-export function obtenerPlan(plan){
-    return (plan === 'basico') ? 1.20: 1.50;
+export function obtenerPlan(plan) {
+    return (plan === 'basico') ? 1.20 : 1.50;
 }
 
 export function primeraMayuscula(texto) {

@@ -22,8 +22,8 @@ export class Resumen extends Component {
 
         return (
             <div>
-                { this.mostrarResumen()}
-             
+                {this.mostrarResumen()}
+
             </div>
         )
     }
