@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Header from './Header'
 import Form from './Form';
+import Resumen from './Resumen';
+
 import { obtenerDiferenciaYear, calcularPorMarca, obtenerPlan } from '../helper.js'
 
 class App extends Component {
@@ -34,10 +36,10 @@ class App extends Component {
 
     //creo objeto para el resumen
 
-    const datosAuto =   {
-       marca: marca,
-       plan: plan,
-       year: year
+    const datosAuto = {
+      marca: marca,
+      plan: plan,
+      year: year
     }
 
 
@@ -56,6 +58,11 @@ class App extends Component {
         <div className="form-container">
           <Form
             cotizarSeguro={this.cotizarSeguro}
+          />
+
+          <Resumen
+            datos={this.state.datos}
+            resultado={this.state.resultado}
           />
         </div>
       </div>
